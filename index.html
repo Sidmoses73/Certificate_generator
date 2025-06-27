@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sidmoses Technology Certificate Maker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.min.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Sidmoses Technology</h1>
+
+    <form id="certForm">
+      <input type="text" id="studentName" placeholder="Student's Full Name" required />
+      <input type="text" id="achievement" placeholder="Achievement (e.g., Best in Math)" required />
+      <input type="date" id="date" required />
+      <button type="submit">Generate Certificate</button>
+    </form>
+
+    <div id="certificate" class="certificate">
+      <img src="logo.png" alt="School Logo" class="logo" />
+      <h2>Sidmoses Technology-- Website Developer</h2>
+      <p class="address">14, Walter Andem Street, Abule-Egba, Lagos Nigeria</p>
+      <p class="sub">Certificate of Achievement</p>
+      <p>This certificate is proudly presented to</p>
+      <h1 id="certName">[Student Name]</h1>
+      <p>for</p>
+      <h3 id="certAchievement">[Achievement]</h3>
+      <p>on <span id="certDate">[Date]</span></p>
+      <div class="footer">
+        <p class="signature">______________<br/>Principal</p>
+        <img src="seal.png" alt="Official Seal" class="seal" />
+      </div>
+    </div>
+
+    <button id="downloadBtn">Download as PDF</button>
+  </div>
+
+  <script src="html2canvas.min.js"></script>
+  <script src="jspdf.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    window.jsPDF = window.jspdf.jsPDF; // 👈 ADD THIS LINE
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Georgia', serif;
+    background: #e8f0ff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  form input, form button {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 16px;
+  }
+  
+  form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #218838;
+  }
+  
+  .certificate {
+    background: url('certificate-bg.png') no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    border: 5px solid #004080;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    display: none;
+    position: relative;
+  }
+  
+  .certificate .logo {
+    width: 100px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+  }
+  
+  .certificate .seal {
+    width: 100px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+  
+  .certificate h1 {
+    font-size: 36px;
+    color: #0056b3;
+  }
+  
+  .certificate h2 {
+    font-size: 28px;
+    color: purple;
+    margin-top: 40px;
+    margin-bottom: -10px;
+  }
+  
+  .certificate h3 {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .certificate .sub {
+    font-size: 30px;
+    margin: 10px 0 30px;
+    color: brown;
+  }
+  
+  .certificate .signature {
+    margin-top: 40px;
+    font-size: 16px;
+    color: antiquewhite;
+  }
+  
+  .footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  #downloadBtn {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #downloadBtn:hover {
+    background: #0056b3;
+  }
